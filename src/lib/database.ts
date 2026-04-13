@@ -9,7 +9,10 @@ type LegacyStore = {
   jobs: PaidTaskJob[];
 };
 
-const DATA_DIRECTORY = join(process.cwd(), ".data");
+import { tmpdir } from "node:os";
+
+const isVercel = !!process.env.VERCEL;
+const DATA_DIRECTORY = isVercel ? tmpdir() : join(process.cwd(), ".data");
 const DATABASE_PATH = join(DATA_DIRECTORY, "credence.db");
 const LEGACY_STORE_PATH = join(DATA_DIRECTORY, "credence-store.json");
 
@@ -19,6 +22,18 @@ function ensureDataDirectory() {
   const directory = dirname(DATABASE_PATH);
   if (!existsSync(directory)) {
     mkdirSync(directory, { recursive: true });
+  }
+
+  // If Vercel and fresh DB, try to copy a bundled db if we shipped one
+  if (isVercel && !existsSync(DATABASE_PATH)) {
+    const bundledDbPath = join(process.cwd(), ".data", "credence.db");
+    if (existsSync(bundledDbPath)) {
+      try {
+        import("node:fs").then((fs) => fs.copyFileSync(bundledDbPath, DATABASE_PATH));
+      } catch (e) {
+        // Ignore copy errors
+      }
+    }
   }
 }
 
