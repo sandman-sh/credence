@@ -1,0 +1,118 @@
+<svg width="1400" height="860" viewBox="0 0 1400 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="48" x2="1298" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FCFF"/>
+      <stop offset="1" stop-color="#EFF4FA"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#F4F8FD" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="panelDark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1C2740"/>
+      <stop offset="1" stop-color="#0F1728"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1D8F85"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1400" height="860" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#0F1728" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="860" rx="36" fill="url(#bg)"/>
+  <circle cx="190" cy="110" r="150" fill="#2DD4BF" fill-opacity="0.12"/>
+  <circle cx="1240" cy="112" r="110" fill="#D4A63F" fill-opacity="0.10"/>
+  <circle cx="1160" cy="748" r="140" fill="#0EA5E9" fill-opacity="0.07"/>
+
+  <text x="88" y="98" fill="#0F1728" font-family="Arial, sans-serif" font-size="44" font-weight="700">Credence architecture</text>
+  <text x="88" y="136" fill="#445065" font-family="Arial, sans-serif" font-size="22">Paid agent work moves from receipt verification to buyer-signed Soroban attestation and indexed marketplace reads.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="198" width="340" height="214" rx="32" fill="url(#panel)"/>
+    <rect x="458" y="198" width="480" height="214" rx="32" fill="url(#panelDark)"/>
+    <rect x="968" y="198" width="344" height="214" rx="32" fill="url(#panel)"/>
+
+    <rect x="88" y="456" width="340" height="262" rx="32" fill="url(#panel)"/>
+    <rect x="458" y="456" width="480" height="262" rx="32" fill="url(#panel)"/>
+    <rect x="968" y="456" width="344" height="262" rx="32" fill="url(#panelDark)"/>
+  </g>
+
+  <g>
+    <rect x="112" y="226" width="116" height="34" rx="17" fill="#E8FFFB"/>
+    <text x="133" y="248" fill="#0F766E" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">BUYER</text>
+    <text x="112" y="300" fill="#0F1728" font-family="Arial, sans-serif" font-size="28" font-weight="700">Marketplace UI</text>
+    <text x="112" y="342" fill="#445065" font-family="Arial, sans-serif" font-size="20">Discovery, profile comparison,</text>
+    <text x="112" y="370" fill="#445065" font-family="Arial, sans-serif" font-size="20">verification workspace, dispute desk.</text>
+    <rect x="112" y="394" width="196" height="14" rx="7" fill="#D9E5F2"/>
+    <rect x="112" y="394" width="138" height="14" rx="7" fill="url(#accent)"/>
+  </g>
+
+  <g>
+    <rect x="482" y="226" width="178" height="34" rx="17" fill="rgba(255,255,255,0.08)"/>
+    <text x="506" y="248" fill="#CCFBF1" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">APP BACKEND</text>
+    <text x="482" y="300" fill="white" font-family="Arial, sans-serif" font-size="30" font-weight="700">Receipt and review engine</text>
+    <text x="482" y="342" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="20">x402-style paid task route, buyer wallet checks,</text>
+    <text x="482" y="370" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="20">review deposit validation, Soroban prepare/submit.</text>
+    <rect x="482" y="394" width="328" height="14" rx="7" fill="#334155"/>
+    <rect x="482" y="394" width="252" height="14" rx="7" fill="#2DD4BF"/>
+  </g>
+
+  <g>
+    <rect x="992" y="226" width="148" height="34" rx="17" fill="#EEF7FF"/>
+    <text x="1019" y="248" fill="#0369A1" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">STELLAR</text>
+    <text x="992" y="300" fill="#0F1728" font-family="Arial, sans-serif" font-size="28" font-weight="700">Testnet rails</text>
+    <text x="992" y="342" fill="#445065" font-family="Arial, sans-serif" font-size="20">Horizon receipt lookups,</text>
+    <text x="992" y="370" fill="#445065" font-family="Arial, sans-serif" font-size="20">Friendbot, and live wallet state.</text>
+    <rect x="992" y="394" width="184" height="14" rx="7" fill="#D9E5F2"/>
+    <rect x="992" y="394" width="126" height="14" rx="7" fill="#0EA5E9"/>
+  </g>
+
+  <g>
+    <rect x="112" y="484" width="144" height="34" rx="17" fill="#FFF7E8"/>
+    <text x="134" y="506" fill="#B45309" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">ADMIN</text>
+    <text x="112" y="558" fill="#0F1728" font-family="Arial, sans-serif" font-size="28" font-weight="700">Dispute workflow</text>
+    <text x="112" y="600" fill="#445065" font-family="Arial, sans-serif" font-size="20">Operators can inspect contested</text>
+    <text x="112" y="628" fill="#445065" font-family="Arial, sans-serif" font-size="20">attestations and move cases from open</text>
+    <text x="112" y="656" fill="#445065" font-family="Arial, sans-serif" font-size="20">to reviewed or resolved.</text>
+  </g>
+
+  <g>
+    <rect x="482" y="484" width="176" height="34" rx="17" fill="#E8FFFB"/>
+    <text x="507" y="506" fill="#0F766E" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">READ MODEL</text>
+    <text x="482" y="558" fill="#0F1728" font-family="Arial, sans-serif" font-size="28" font-weight="700">SQLite marketplace index</text>
+    <text x="482" y="600" fill="#445065" font-family="Arial, sans-serif" font-size="20">Fast reads for directory sorting, verifier summaries,</text>
+    <text x="482" y="628" fill="#445065" font-family="Arial, sans-serif" font-size="20">recent activity, dispute lookup, and onchain sync state.</text>
+    <rect x="482" y="654" width="320" height="14" rx="7" fill="#D9E5F2"/>
+    <rect x="482" y="654" width="214" height="14" rx="7" fill="url(#accent)"/>
+  </g>
+
+  <g>
+    <rect x="992" y="484" width="190" height="34" rx="17" fill="rgba(255,255,255,0.08)"/>
+    <text x="1018" y="506" fill="#CCFBF1" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">SOROBAN</text>
+    <text x="992" y="558" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700">Attestation contract</text>
+    <text x="992" y="600" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="20">Buyer-signed attestations become</text>
+    <text x="992" y="628" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="20">non-transferable trust records for each agent wallet.</text>
+    <rect x="992" y="654" width="218" height="14" rx="7" fill="#334155"/>
+    <rect x="992" y="654" width="168" height="14" rx="7" fill="#2DD4BF"/>
+  </g>
+
+  <g stroke="#0F1728" stroke-opacity="0.22" stroke-width="4" stroke-linecap="round">
+    <path d="M428 305H458"/>
+    <path d="M938 305H968"/>
+    <path d="M598 412V456"/>
+    <path d="M1112 412V456"/>
+    <path d="M428 586H458"/>
+    <path d="M938 586H968"/>
+  </g>
+
+  <g>
+    <rect x="584" y="428" width="162" height="36" rx="18" fill="#0F1728"/>
+    <text x="611" y="451" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="700">verified payment</text>
+  </g>
+  <g>
+    <rect x="1088" y="428" width="174" height="36" rx="18" fill="#0F1728"/>
+    <text x="1116" y="451" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="700">signed attestation</text>
+  </g>
+</svg>
